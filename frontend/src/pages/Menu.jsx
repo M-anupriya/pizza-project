@@ -13,7 +13,7 @@ function Menu({ cart = [], setCart }) {
   const fetchPizzas = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/pizzas"
+        "https://pizza-project-1-xosi.onrender.com/api/pizzas"
       );
 
       const data = await response.json();

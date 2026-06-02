@@ -12,7 +12,7 @@ function PizzaCard({ pizza, addToCart }) {
       
 
       <img
-        src={imageUrl}
+        src={`https://pizza-project-1-xosi.onrender.com${pizza.image}`}
         alt={pizza.name}
         className="w-full h-40 object-cover rounded"
       />
