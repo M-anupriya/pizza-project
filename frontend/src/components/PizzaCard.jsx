@@ -3,16 +3,13 @@ function PizzaCard({ pizza, addToCart }) {
     pizza.image && typeof pizza.image === "string"
       ? pizza.image.startsWith("http")
         ? pizza.image
-        : `http://localhost:5000${pizza.image}`
+        : `https://pizza-project-1-xosi.onrender.com${pizza.image}`
       : "https://via.placeholder.com/300";
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md w-64">
-
-      
-
       <img
-        src={`https://pizza-project-1-xosi.onrender.com${pizza.image}`}
+        src={imageUrl}
         alt={pizza.name}
         className="w-full h-40 object-cover rounded"
       />
@@ -35,7 +32,6 @@ function PizzaCard({ pizza, addToCart }) {
       >
         Add to Cart
       </button>
-
     </div>
   );
 }
