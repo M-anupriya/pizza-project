@@ -18,6 +18,8 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+
+
 // Static Folder
 app.use("/uploads", express.static("uploads"));
 
